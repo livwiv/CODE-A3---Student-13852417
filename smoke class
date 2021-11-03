@@ -1,0 +1,31 @@
+class Smoke {
+  float x, y;
+  float sizeX, sizeY;
+
+  Smoke() {
+    x = width/2;
+    y = height;
+    sizeX = 36;
+    sizeY = 36;
+  }
+
+  void display() {
+    fill(value);
+  noStroke();
+ellipse(124, 130, 130, 140);
+ellipse(156, 185, 197, 135);
+ellipse(99, 210, 170, 140); 
+
+ellipse (430, 310, 100, 80);
+ellipse (445, 260, 80, 60);
+ellipse (500, 300, 75, 75);
+
+ellipse (500, 150, 100, 100);
+ellipse (550, 90, 120, 80);
+ellipse (580, 150, 165, 100);
+  }
+
+  void ascend() {
+    y--;
+  }
+}
