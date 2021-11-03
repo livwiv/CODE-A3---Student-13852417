@@ -1,0 +1,85 @@
+void setup(){
+  size(800, 1000);  
+}
+
+void smoke(){
+  fill(value);
+  noStroke();
+ellipse(124, 130, 130, 140);
+ellipse(156, 185, 197, 135);
+ellipse(99, 210, 170, 140); 
+
+ellipse (430, 310, 100, 80);
+ellipse (445, 260, 80, 60);
+ellipse (500, 300, 75, 75);
+
+ellipse (500, 150, 100, 100);
+ellipse (550, 90, 120, 80);
+ellipse (580, 150, 165, 100);
+
+}
+
+int value = 0;
+var on = false;
+
+void draw() {
+  if (on) { 
+     noStroke();
+  background(178, 212, 234);
+  fill(68, 106, 70);
+  rect(0, 750, 800, 250);
+  fill(255);
+  rect(400, 500, 290, 300);
+    fill(0);
+    rect(510, 650, 75, 150);
+  quad(450, 400, 650, 400, 740, 500, 350, 500);
+  textSize(35);
+  text("House of Waste", 435, 575);
+  fill(#BC4719);
+  
+  fill(#BF401D);
+  rect(600, 360, 20, 50);
+    
+
+  textSize(20);
+  text("92 million tonnes of textile waste ends up", 150, 150);
+  text("in landfills every year", 150, 175);
+  fill(#52894A);
+  } else { 
+    noStroke();
+  background(178, 212, 234);
+  fill(68, 106, 70);
+  rect(0, 750, 800, 250);
+  fill(255);
+  rect(400, 500, 290, 300);
+    fill(0);
+    rect(510, 650, 75, 150);
+  quad(450, 400, 650, 400, 740, 500, 350, 500);
+  textSize(35);
+  text("House of Waste", 435, 575);
+  fill(#BC4719);
+  
+  fill(#BF401D);
+  rect(600, 360, 20, 50);
+  }
+    
+  fill(value);
+  smoke();
+}
+
+  
+ 
+void keyPressed() {
+  if (value == #B2D4EA) {
+    value = #848789;
+  } else {
+    value = #B2D4EA; 
+  }
+  
+}
+
+void mouseClicked() {
+  on = true; 
+  
+  
+}
